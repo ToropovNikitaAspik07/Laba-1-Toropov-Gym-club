@@ -1,0 +1,11 @@
+<div class="client">
+    <input [(ngModel)]="cardNumber" placeholder="Введите номер карты">
+    <button (click)="getClient()">Найти клиента по номеру карты</button>
+    <h2>Имя: {{client?.name}}</h2>
+    <p>Сессий осталось: {{client?.sessionsLeft}}</p>
+    <p>Абонемент активен до: {{client?.abonementExpireDate}}</p>
+    <p>Статус абонемента: {{abonementStatus()}}</p>
+    <a routerLink="/role-changer">Вернуться на главную</a>
+</div>
+
+
