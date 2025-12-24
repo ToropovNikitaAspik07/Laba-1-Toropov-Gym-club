@@ -1,4 +1,5 @@
 ﻿using BackendApi.Domain.Interfaces.Repositories;
+using BackendApi.Domain.Interfaces.Services;
 using BackendApi.Domain.Services;
 using BackendApi.Infrastructure.DTO;
 using BackendApi.Infrastructure.Providers;
@@ -12,10 +13,11 @@ namespace BackendApi.Infrastructure.Repositories
     {
         private readonly ClientContext _context;
         private readonly ISessionStatisticsRepository _sessionStatisticsRepository;
-       
-        
+        private readonly ICardNumberService _cardNumberService;
 
-        public ClientRepoitory(ClientContext context,IConfiguration configuration, ISessionStatisticsRepository sessionStatisticsRepository)
+
+
+        public ClientRepoitory(ClientContext context,IConfiguration configuration, ISessionStatisticsRepository sessionStatisticsRepository, ICardNumberService cardNumberService)
         {
             if (configuration == null)
             {
@@ -23,6 +25,8 @@ namespace BackendApi.Infrastructure.Repositories
             }
             this._sessionStatisticsRepository = sessionStatisticsRepository ?? throw new ArgumentNullException(nameof(sessionStatisticsRepository));
             this._context = context ?? throw new ArgumentNullException(nameof(context));
+            _cardNumberService = cardNumberService
+        ?? throw new ArgumentNullException(nameof(cardNumberService));
         }
         
         
@@ -72,7 +76,7 @@ namespace BackendApi.Infrastructure.Repositories
             {
                 throw new ArgumentNullException(nameof(client));
             }
-            client.CardNumber = await new CardNumberService(_context).GenerateUniqueCardNumberAsync();
+            client.CardNumber = await _cardNumberService.GenerateUniqueCardNumberAsync();
             client.AbonementExpireDate = DateTime.SpecifyKind((DateTime)client.AbonementExpireDate, DateTimeKind.Utc);
             _context.Clients.Add(client);
             await _sessionStatisticsRepository

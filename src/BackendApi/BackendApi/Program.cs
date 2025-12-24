@@ -1,7 +1,9 @@
+using BackendApi.Domain.Interfaces.Providers;
 using BackendApi.Domain.Interfaces.Repositories;
 using BackendApi.Domain.Interfaces.Services;
 using BackendApi.Domain.Services;
 using BackendApi.Infrastructure.DTO;
+using BackendApi.Infrastructure.Providers;
 using BackendApi.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,6 +18,7 @@ builder.Services.AddTransient<IClientRepository, ClientRepoitory>();
 builder.Services.AddDbContext<ClientContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Toropov")));
 builder.Services.AddScoped<ICardNumberService, CardNumberService>();
+builder.Services.AddSingleton<ICardNumberGenerator, CardNumberGenerator>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular",

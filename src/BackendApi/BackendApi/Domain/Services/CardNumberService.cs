@@ -1,4 +1,5 @@
 ﻿using BackendApi.Domain.Interfaces.Services;
+using BackendApi.Domain.Interfaces.Providers;
 using BackendApi.Infrastructure.DTO;
 using BackendApi.Infrastructure.Providers;
 using Microsoft.EntityFrameworkCore;
@@ -9,11 +10,12 @@ namespace BackendApi.Domain.Services
     public class CardNumberService : ICardNumberService
     {
         private readonly ClientContext _context;
-        private readonly CardNumberGenerator _cardNumberGenerator = new CardNumberGenerator();
+        private readonly ICardNumberGenerator _cardNumberGenerator;
 
-        public CardNumberService(ClientContext context)
+        public CardNumberService(ClientContext context, ICardNumberGenerator cardNumberGenerator)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
+            _cardNumberGenerator = cardNumberGenerator ?? throw new ArgumentNullException(nameof(cardNumberGenerator));
         }
 
         public async Task<string> GenerateUniqueCardNumberAsync()
@@ -30,7 +32,7 @@ namespace BackendApi.Domain.Services
             } 
             while(await _context.Clients.AnyAsync(c => c.CardNumber == code));
             return code;
-            // Генерация уникального номера карты (пример реализации)
+            
 
         }
     }

@@ -14,7 +14,7 @@ namespace BackendApi.Presentation.Controllers
         
         
 
-        public ClientController(ClientContext context,IClientRepository repository)
+        public ClientController(IClientRepository repository)
         { 
             this.clientRepository = repository ?? throw new ArgumentNullException(nameof(repository));
         }
