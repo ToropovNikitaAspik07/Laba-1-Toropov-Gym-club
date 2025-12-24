@@ -13,15 +13,20 @@ namespace BackendApi.Domain.Services
 
         public CardNumberService(ClientContext context)
         {
-            _context = context;
+            _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
         public async Task<string> GenerateUniqueCardNumberAsync()
         {
             string code;
-
-            do             {
+            int attempts = 0;
+            do {
                 code = _cardNumberGenerator.GenerateCardNumber();
+                attempts++;
+                if (attempts > 100)
+                {
+                    throw new Exception("Unable to generate a unique card number after 100 attempts.");
+                }
             } 
             while(await _context.Clients.AnyAsync(c => c.CardNumber == code));
             return code;

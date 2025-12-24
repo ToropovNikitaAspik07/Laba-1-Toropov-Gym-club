@@ -1,0 +1,3 @@
+src/BackendApi/.vs/
+src/BackendApi/BackendApi/bin/
+src/BackendApi/BackendApi/BackendApi.csproj.user

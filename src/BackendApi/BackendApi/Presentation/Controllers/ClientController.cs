@@ -11,29 +11,19 @@ namespace BackendApi.Presentation.Controllers
     public class ClientController : Controller
     {
         private readonly IClientRepository clientRepository;
-        private readonly ICardNumberService cardNumberService;
-        private readonly ClientContext _context;
+        
+        
 
-        public ClientController(ClientContext context,IClientRepository repository, ICardNumberService cardNumberService)
+        public ClientController(ClientContext context,IClientRepository repository)
         { 
             this.clientRepository = repository ?? throw new ArgumentNullException(nameof(repository));
-            this.cardNumberService = cardNumberService ?? throw new ArgumentNullException(nameof(cardNumberService));
-            this._context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
-        /*[HttpGet("{id}")]
-        public async Task<IActionResult> GetClientById(Guid id)
-        {
-            var client = await clientRepository.GetClientByIdAsync(id);
-            if (client == null)
-            {
-                return NotFound();
-            }
-            return Ok(client);
-        }*/
         [HttpGet("bycard/{cardNumber}")]
         public async Task<IActionResult> GetClientByCardNumber(string cardNumber)
         {
+            if (string.IsNullOrEmpty(cardNumber))
+                return BadRequest("CardNumber cannot be null or empty.");
             var client = await clientRepository.GetClientByCardNumberAsync(cardNumber);
             if (client == null)
                 return NotFound($"Client with CardNumber '{cardNumber}' not found.");
@@ -44,14 +34,64 @@ namespace BackendApi.Presentation.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateClient([FromBody] Client client)
         {
-            client.CardNumber = await cardNumberService.GenerateUniqueCardNumberAsync();
-            client.AbonementExpireDate = DateTime.SpecifyKind((DateTime)client.AbonementExpireDate, DateTimeKind.Utc);
-            _context.Clients.Add(client);
-            await _context.SaveChangesAsync();
-
+            if (client == null)
+                return BadRequest("Client cannot be null.");
+            await clientRepository.AddClientAsync(client);
             return Ok(client);
         }
-        //private readonly ILogger<ClientController> _ClientLogger;
+        [HttpPost("use-session/{cardNumber}")]
+        public async Task<IActionResult> UseSession(string cardNumber)
+        {
+            if (string.IsNullOrEmpty(cardNumber))
+                return BadRequest("CardNumber cannot be null or empty.");
+            var updated = await clientRepository.UseSessionAsync(cardNumber);
+            if (updated == 0)
+                return NotFound($"No sessions left or client with CardNumber '{cardNumber}' not found.");
+            return Ok(new { Message = "Session used successfully.", Updated = updated });
+        }
+        [HttpPost("add-sessions")]
+        public async Task<IActionResult> AddSessions([FromQuery] string cardNumber, [FromQuery] int sessionsToAdd)
+        {
+            if (string.IsNullOrEmpty(cardNumber))
+                return BadRequest("CardNumber cannot be null or empty.");
+            if (sessionsToAdd <= 0)
+                return BadRequest("Sessions to add must be greater than zero.");
+            var client = await clientRepository.GetClientByCardNumberAsync(cardNumber);
+            if (client == null)
+                return NotFound($"Client with CardNumber '{cardNumber}' not found.");
+            client.SessionsLeft += sessionsToAdd;
+            await clientRepository.AddClientAsync(client); 
+            return Ok(new { Message = "Sessions added successfully.", TotalSessions = client.SessionsLeft });
+        }
+        [HttpPost("register-to-training")]
+        public async Task<IActionResult> RegisterToTraining([FromBody] RegisterToTrainingRequest request)
+        {
+            if (request == null)
+                return BadRequest("Request body is required");
+
+            if (string.IsNullOrWhiteSpace(request.CardNumber))
+                return BadRequest("CardNumber is required");
+
+            if (request.TrainingId <= 0)
+                return BadRequest("Invalid TrainingId");
+
+            try
+            {
+                await clientRepository.RegisterClientToTrainingAsync(
+                    request.CardNumber,
+                    request.TrainingId);
+
+                return Ok(new
+                {
+                    message = "Client successfully registered to training"
+                });
+            }
+            catch (InvalidOperationException ex)
+            {
+                // бизнес-ошибки (нет сессий, не найдено и т.д.)
+                return Conflict(new { error = ex.Message });
+            }
+        }
 
     }
 }

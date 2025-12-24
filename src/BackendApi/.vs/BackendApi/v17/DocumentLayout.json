@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "G:\\web2\\tor\\src\\BackendApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\domain\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\domain\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\infrastructure\\dto\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\infrastructure\\dto\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\infrastructure\\repositories\\clientrepoitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\infrastructure\\repositories\\clientrepoitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,40 +11,84 @@
       "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\presentation\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\infrastructure\\dto\\clientcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\infrastructure\\dto\\clientcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\domain\\models\\training.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\domain\\models\\training.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\domain\\interfaces\\repositories\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\domain\\interfaces\\repositories\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\infrastructure\\dto\\trainercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\infrastructure\\dto\\trainercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\infrastructure\\providers\\cardnumbergenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\infrastructure\\providers\\cardnumbergenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\infrastructure\\repositories\\sessionstatisticsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\infrastructure\\repositories\\sessionstatisticsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\domain\\interfaces\\services\\icardnumberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\domain\\interfaces\\services\\icardnumberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\infrastructure\\repositories\\trainerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\infrastructure\\repositories\\trainerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\presentation\\controllers\\sessionstatisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\presentation\\controllers\\sessionstatisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\domain\\services\\cardnumberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\domain\\services\\cardnumberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\presentation\\controllers\\trainercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\presentation\\controllers\\trainercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\domain\\interfaces\\providers\\icardnumbergenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\domain\\interfaces\\providers\\icardnumbergenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\infrastructure\\dto\\registertotrainingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\infrastructure\\dto\\registertotrainingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\backendapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\backendapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\domain\\interfaces\\repositories\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\domain\\interfaces\\repositories\\iclientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\infrastructure\\dto\\clientcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\infrastructure\\dto\\clientcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\infrastructure\\dto\\sessionstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\infrastructure\\dto\\sessionstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\infrastructure\\dto\\sessionstatisticscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\infrastructure\\dto\\sessionstatisticscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\infrastructure\\dto\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\infrastructure\\dto\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\domain\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\domain\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\domain\\interfaces\\repositories\\isessionstatisticsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\domain\\interfaces\\repositories\\isessionstatisticsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\domain\\interfaces\\repositories\\itrainerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\domain\\interfaces\\repositories\\itrainerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\infrastructure\\dto\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\infrastructure\\dto\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\domain\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\domain\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\infrastructure\\dto\\training.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\infrastructure\\dto\\training.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|g:\\web2\\tor\\src\\backendapi\\backendapi\\domain\\models\\sessionstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7641BF-AB46-44FA-A394-81CA38DF3985}|BackendApi\\BackendApi.csproj|solutionrelative:backendapi\\domain\\models\\sessionstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,164 +98,293 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Program.cs",
-              "RelativeDocumentMoniker": "BackendApi\\Program.cs",
-              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Program.cs",
-              "RelativeToolTip": "BackendApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T11:53:59.612Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClientContext.cs",
-              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\ClientContext.cs",
-              "RelativeDocumentMoniker": "BackendApi\\Infrastructure\\DTO\\ClientContext.cs",
-              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\ClientContext.cs",
-              "RelativeToolTip": "BackendApi\\Infrastructure\\DTO\\ClientContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T13:45:37.441Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClientController.cs",
-              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Presentation\\Controllers\\ClientController.cs",
-              "RelativeDocumentMoniker": "BackendApi\\Presentation\\Controllers\\ClientController.cs",
-              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Presentation\\Controllers\\ClientController.cs",
-              "RelativeToolTip": "BackendApi\\Presentation\\Controllers\\ClientController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAADEAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T12:09:50.161Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Client.cs",
-              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\Client.cs",
-              "RelativeDocumentMoniker": "BackendApi\\Infrastructure\\DTO\\Client.cs",
-              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\Client.cs",
-              "RelativeToolTip": "BackendApi\\Infrastructure\\DTO\\Client.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T13:53:45.611Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Client.cs",
-              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Models\\Client.cs",
-              "RelativeDocumentMoniker": "BackendApi\\Domain\\Models\\Client.cs",
-              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Models\\Client.cs",
-              "RelativeToolTip": "BackendApi\\Domain\\Models\\Client.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T12:01:23.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\appsettings.json",
-              "RelativeDocumentMoniker": "BackendApi\\appsettings.json",
-              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\appsettings.json",
-              "RelativeToolTip": "BackendApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-12T13:33:36.066Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "ClientRepoitory.cs",
               "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\Repositories\\ClientRepoitory.cs",
               "RelativeDocumentMoniker": "BackendApi\\Infrastructure\\Repositories\\ClientRepoitory.cs",
               "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\Repositories\\ClientRepoitory.cs",
               "RelativeToolTip": "BackendApi\\Infrastructure\\Repositories\\ClientRepoitory.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAwwFUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwFUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T12:08:40.349Z"
+              "WhenOpened": "2025-12-23T18:15:41.588Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ICardNumberService.cs",
-              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Interfaces\\Services\\ICardNumberService.cs",
-              "RelativeDocumentMoniker": "BackendApi\\Domain\\Interfaces\\Services\\ICardNumberService.cs",
-              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Interfaces\\Services\\ICardNumberService.cs",
-              "RelativeToolTip": "BackendApi\\Domain\\Interfaces\\Services\\ICardNumberService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Presentation\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Presentation\\Controllers\\ClientController.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Presentation\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "BackendApi\\Presentation\\Controllers\\ClientController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwE8AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T21:06:13.642Z"
+              "WhenOpened": "2025-12-23T13:57:59.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SessionStatisticsRepository.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\Repositories\\SessionStatisticsRepository.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Infrastructure\\Repositories\\SessionStatisticsRepository.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\Repositories\\SessionStatisticsRepository.cs",
+              "RelativeToolTip": "BackendApi\\Infrastructure\\Repositories\\SessionStatisticsRepository.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAwwHEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:43:58.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SessionStatisticsController.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Presentation\\Controllers\\SessionStatisticsController.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Presentation\\Controllers\\SessionStatisticsController.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Presentation\\Controllers\\SessionStatisticsController.cs",
+              "RelativeToolTip": "BackendApi\\Presentation\\Controllers\\SessionStatisticsController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwC4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T13:59:03.823Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "TrainerRepository.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\Repositories\\TrainerRepository.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Infrastructure\\Repositories\\TrainerRepository.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\Repositories\\TrainerRepository.cs",
+              "RelativeToolTip": "BackendApi\\Infrastructure\\Repositories\\TrainerRepository.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwBQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T18:36:25.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Training.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Models\\Training.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Domain\\Models\\Training.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Models\\Training.cs",
+              "RelativeToolTip": "BackendApi\\Domain\\Models\\Training.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T14:03:45.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TrainerController.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Presentation\\Controllers\\TrainerController.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Presentation\\Controllers\\TrainerController.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Presentation\\Controllers\\TrainerController.cs",
+              "RelativeToolTip": "BackendApi\\Presentation\\Controllers\\TrainerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T21:28:10.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CardNumberGenerator.cs",
               "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\Providers\\CardNumberGenerator.cs",
               "RelativeDocumentMoniker": "BackendApi\\Infrastructure\\Providers\\CardNumberGenerator.cs",
               "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\Providers\\CardNumberGenerator.cs",
               "RelativeToolTip": "BackendApi\\Infrastructure\\Providers\\CardNumberGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T20:51:16.571Z"
+              "WhenOpened": "2025-12-23T18:10:26.35Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "TrainerContext.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\TrainerContext.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Infrastructure\\DTO\\TrainerContext.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\TrainerContext.cs",
+              "RelativeToolTip": "BackendApi\\Infrastructure\\DTO\\TrainerContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T18:23:56.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterToTrainingRequest.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\RegisterToTrainingRequest.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Infrastructure\\DTO\\RegisterToTrainingRequest.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\RegisterToTrainingRequest.cs",
+              "RelativeToolTip": "BackendApi\\Infrastructure\\DTO\\RegisterToTrainingRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T04:01:46.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "IClientRepository.cs",
               "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Interfaces\\Repositories\\IClientRepository.cs",
               "RelativeDocumentMoniker": "BackendApi\\Domain\\Interfaces\\Repositories\\IClientRepository.cs",
               "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Interfaces\\Repositories\\IClientRepository.cs",
               "RelativeToolTip": "BackendApi\\Domain\\Interfaces\\Repositories\\IClientRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T12:05:34.449Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CardNumberService.cs",
-              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Services\\CardNumberService.cs",
-              "RelativeDocumentMoniker": "BackendApi\\Domain\\Services\\CardNumberService.cs",
-              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Services\\CardNumberService.cs",
-              "RelativeToolTip": "BackendApi\\Domain\\Services\\CardNumberService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T21:06:51.392Z"
+              "WhenOpened": "2025-12-23T13:06:54.916Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "ICardNumberGenerator.cs",
-              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Interfaces\\Providers\\ICardNumberGenerator.cs",
-              "RelativeDocumentMoniker": "BackendApi\\Domain\\Interfaces\\Providers\\ICardNumberGenerator.cs",
-              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Interfaces\\Providers\\ICardNumberGenerator.cs",
-              "RelativeToolTip": "BackendApi\\Domain\\Interfaces\\Providers\\ICardNumberGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAJAAAAAAAAAA==",
+              "Title": "ClientContext.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\ClientContext.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Infrastructure\\DTO\\ClientContext.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\ClientContext.cs",
+              "RelativeToolTip": "BackendApi\\Infrastructure\\DTO\\ClientContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T20:50:21.221Z"
+              "WhenOpened": "2025-12-23T18:08:35.921Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "BackendApi.http",
-              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\BackendApi.http",
-              "RelativeDocumentMoniker": "BackendApi\\BackendApi.http",
-              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\BackendApi.http",
-              "RelativeToolTip": "BackendApi\\BackendApi.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-12-12T12:13:40.199Z"
+              "Title": "SessionStatistics.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\SessionStatistics.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Infrastructure\\DTO\\SessionStatistics.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\SessionStatistics.cs",
+              "RelativeToolTip": "BackendApi\\Infrastructure\\DTO\\SessionStatistics.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T18:08:16.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SessionStatisticsContext.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\SessionStatisticsContext.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Infrastructure\\DTO\\SessionStatisticsContext.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\SessionStatisticsContext.cs",
+              "RelativeToolTip": "BackendApi\\Infrastructure\\DTO\\SessionStatisticsContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T18:08:17.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Client.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\Client.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Infrastructure\\DTO\\Client.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\Client.cs",
+              "RelativeToolTip": "BackendApi\\Infrastructure\\DTO\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T18:08:29.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Client.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Domain\\Models\\Client.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Models\\Client.cs",
+              "RelativeToolTip": "BackendApi\\Domain\\Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T18:10:20.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ISessionStatisticsRepository.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Interfaces\\Repositories\\ISessionStatisticsRepository.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Domain\\Interfaces\\Repositories\\ISessionStatisticsRepository.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Interfaces\\Repositories\\ISessionStatisticsRepository.cs",
+              "RelativeToolTip": "BackendApi\\Domain\\Interfaces\\Repositories\\ISessionStatisticsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T03:51:48.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Trainer.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\Trainer.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Infrastructure\\DTO\\Trainer.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\Trainer.cs",
+              "RelativeToolTip": "BackendApi\\Infrastructure\\DTO\\Trainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T18:12:54.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Trainer.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Models\\Trainer.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Domain\\Models\\Trainer.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Models\\Trainer.cs",
+              "RelativeToolTip": "BackendApi\\Domain\\Models\\Trainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T13:57:57.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Training.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\Training.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Infrastructure\\DTO\\Training.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Infrastructure\\DTO\\Training.cs",
+              "RelativeToolTip": "BackendApi\\Infrastructure\\DTO\\Training.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T18:13:03.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ITrainerRepository.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Interfaces\\Repositories\\ITrainerRepository.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Domain\\Interfaces\\Repositories\\ITrainerRepository.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Interfaces\\Repositories\\ITrainerRepository.cs",
+              "RelativeToolTip": "BackendApi\\Domain\\Interfaces\\Repositories\\ITrainerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T18:36:50.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SessionStatistics.cs",
+              "DocumentMoniker": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Models\\SessionStatistics.cs",
+              "RelativeDocumentMoniker": "BackendApi\\Domain\\Models\\SessionStatistics.cs",
+              "ToolTip": "G:\\web2\\tor\\src\\BackendApi\\BackendApi\\Domain\\Models\\SessionStatistics.cs",
+              "RelativeToolTip": "BackendApi\\Domain\\Models\\SessionStatistics.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T18:14:12.444Z",
+              "EditorCaption": ""
             }
           ]
         }

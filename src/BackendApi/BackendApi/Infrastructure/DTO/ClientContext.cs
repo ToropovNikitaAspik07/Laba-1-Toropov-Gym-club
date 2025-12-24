@@ -13,6 +13,8 @@ namespace BackendApi.Infrastructure.DTO
         }
 
         public virtual DbSet<Client> Clients { get; set; } = null!;
+        public DbSet<Training> Trainings { get; set; } = null!;
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseNpgsql(this.configuration.GetConnectionString("Toropov"));
