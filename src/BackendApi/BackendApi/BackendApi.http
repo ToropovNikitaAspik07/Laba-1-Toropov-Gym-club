@@ -1,0 +1,6 @@
+@BackendApi_HostAddress = http://localhost:5265
+
+GET {{BackendApi_HostAddress}}/Client/fb7921e5-3ce0-45e0-b744-0ec81bbf0ab2
+Accept: application/json
+
+###
