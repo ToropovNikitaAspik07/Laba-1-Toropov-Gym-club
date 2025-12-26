@@ -4,7 +4,7 @@ namespace BackendApi.Infrastructure.DTO
 {
     public partial class TrainerContext : DbContext
     {
-        IConfiguration configuration;
+        private IConfiguration configuration;
         public TrainerContext(DbContextOptions<TrainerContext> options, IConfiguration configuration)
             : base(options)
         {
