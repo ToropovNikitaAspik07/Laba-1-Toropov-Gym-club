@@ -5,7 +5,7 @@ namespace BackendApi.Infrastructure.DTO
     public partial class TrainerContext : DbContext
     {
         IConfiguration configuration;
-        public TrainerContext(DbContextOptions<TrainerContext> options)
+        public TrainerContext(DbContextOptions<TrainerContext> options, IConfiguration configuration)
             : base(options)
         {
             this.configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));

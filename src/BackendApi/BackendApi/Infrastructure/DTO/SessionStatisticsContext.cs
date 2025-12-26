@@ -6,7 +6,7 @@ namespace BackendApi.Infrastructure.DTO
     public partial class SessionStatisticsContext : DbContext
     {
         private IConfiguration configuration;
-        public SessionStatisticsContext(DbContextOptions<SessionStatisticsContext> options)
+        public SessionStatisticsContext(DbContextOptions<SessionStatisticsContext> options, IConfiguration configuration)
             : base(options)
         {
             this.configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
