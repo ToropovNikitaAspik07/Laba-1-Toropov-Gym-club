@@ -13,27 +13,36 @@ namespace BackendApi.Infrastructure.Services
             ITrainerRepository trainerRepository,
             IClientRepository clientRepository)
         {
-            _trainerRepository = trainerRepository;
-            _clientRepository = clientRepository;
+            _trainerRepository = trainerRepository ?? throw new ArgumentNullException(nameof(trainerRepository));
+            _clientRepository = clientRepository ?? throw new ArgumentNullException(nameof(clientRepository));
         }
 
         public async Task<int> CreateTrainingAsync(CreateTrainingDto dto)
         {
             var clients = new List<Client>();
 
+            if (dto == null)
+            {
+                throw new ArgumentNullException(nameof(dto), "Training data is required.");
+            }
+
             if (dto.ClientIds != null && dto.ClientIds.Any())
             {
                 clients = await _clientRepository.GetByIdsAsync(dto.ClientIds);
+            } 
+            else
+            {
+                throw new ArgumentNullException(nameof(dto.ClientIds), "Client IDs are required.");
             }
 
-            var training = new Training
-            {
-                TrainerId = dto.TrainerId,
-                TrainerName = dto.TrainerName,
-                TrainingDateTime = dto.TrainingDateTime,
-                SpecialNotes = dto.SpecialNotes,
-                Clients = clients
-            };
+                var training = new Training
+                {
+                    TrainerId = dto.TrainerId,
+                    TrainerName = dto.TrainerName,
+                    TrainingDateTime = dto.TrainingDateTime,
+                    SpecialNotes = dto.SpecialNotes,
+                    Clients = clients
+                };
 
             await _trainerRepository.AddTrainingWithClientsAsync(training);
 
