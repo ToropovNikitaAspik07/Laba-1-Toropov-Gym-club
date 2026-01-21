@@ -1,4 +1,6 @@
-﻿namespace BackendApi.Domain.Models
+﻿using BackendApi.Domain.Models.Auth;
+
+namespace BackendApi.Domain.Models
 {
     public class Trainer
     {
@@ -14,5 +16,7 @@
         public bool IsActive { get; set; }
         public List<Training> Trainings { get; set; } = new();
 
+        public Guid UserId { get; set; }
+        public User User { get; set; } = null!;
     }
 }

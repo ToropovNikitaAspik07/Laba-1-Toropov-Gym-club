@@ -1,4 +1,4 @@
-﻿using BackendApi.Infrastructure.DTO;
+﻿using BackendApi.Domain.Models;
 namespace BackendApi.Domain.Interfaces.Repositories
 {
     public interface IClientRepository
@@ -7,5 +7,6 @@ namespace BackendApi.Domain.Interfaces.Repositories
         Task<Client?> GetClientByCardNumberAsync(string cardNumber);
         Task<int> UseSessionAsync(string cardNumber);
         Task RegisterClientToTrainingAsync(string cardNumber, int trainingId);
+        Task<List<Client>> GetByIdsAsync(List<Guid> ids);
     }
 }

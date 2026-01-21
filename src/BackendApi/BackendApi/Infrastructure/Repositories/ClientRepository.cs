@@ -1,23 +1,23 @@
 ﻿using BackendApi.Domain.Interfaces.Repositories;
 using BackendApi.Domain.Interfaces.Services;
-using BackendApi.Domain.Services;
+using BackendApi.Domain.Models;
 using BackendApi.Infrastructure.DTO;
-using BackendApi.Infrastructure.Providers;
 using Microsoft.EntityFrameworkCore;
 using Npgsql;
 
 
 namespace BackendApi.Infrastructure.Repositories
 {
-    public class ClientRepoitory : IClientRepository
+    public class ClientRepository : IClientRepository
     {
-        private readonly ClientContext _context;
+        private readonly AppDbContext _context;
         private readonly ISessionStatisticsRepository _sessionStatisticsRepository;
+        private readonly ITrainerRepository _trainerRepository;
         private readonly ICardNumberService _cardNumberService;
 
 
 
-        public ClientRepoitory(ClientContext context,IConfiguration configuration, ISessionStatisticsRepository sessionStatisticsRepository, ICardNumberService cardNumberService)
+        public ClientRepository(AppDbContext context,IConfiguration configuration, ISessionStatisticsRepository sessionStatisticsRepository, ITrainerRepository trainerRepository, ICardNumberService cardNumberService)
         {
             if (configuration == null)
             {
@@ -25,6 +25,7 @@ namespace BackendApi.Infrastructure.Repositories
             }
             this._sessionStatisticsRepository = sessionStatisticsRepository ?? throw new ArgumentNullException(nameof(sessionStatisticsRepository));
             this._context = context ?? throw new ArgumentNullException(nameof(context));
+            _trainerRepository = trainerRepository ?? throw new ArgumentNullException(nameof(trainerRepository));
             _cardNumberService = cardNumberService
         ?? throw new ArgumentNullException(nameof(cardNumberService));
         }
@@ -115,7 +116,12 @@ namespace BackendApi.Infrastructure.Repositories
             await _context.SaveChangesAsync();
             await transaction.CommitAsync();
         }
-
+        public async Task<List<Client>> GetByIdsAsync(List<Guid> ids)
+        {
+            return await _context.Clients
+                .Where(c => ids.Contains(c.Id))
+                .ToListAsync();
+        }
 
 
     }

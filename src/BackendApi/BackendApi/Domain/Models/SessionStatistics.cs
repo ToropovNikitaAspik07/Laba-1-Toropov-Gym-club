@@ -4,8 +4,9 @@ namespace BackendApi.Domain.Models
 {
     public class SessionStatistics
     {
-        DateTime StatisticsDay{ get; set; }
-        int SessionsUsed { get; set; } = 0;
-        int clientsRegistered { get; set; } = 0;
+        public Guid Id { get; set; }
+        public DateTime StatisticsDay{ get; set; }
+        public int SessionsUsed { get; set; } = 0;
+        public int clientsRegistered { get; set; } = 0;
     }
 }

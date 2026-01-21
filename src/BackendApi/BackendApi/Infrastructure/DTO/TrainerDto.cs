@@ -1,6 +1,8 @@
-﻿namespace BackendApi.Infrastructure.DTO
+﻿using BackendApi.Domain.Models.Auth;
+
+namespace BackendApi.Infrastructure.DTO
 {
-    public class Trainer
+    public class TrainerDto
     {
         public int Id { get; set; }
 
@@ -14,6 +16,8 @@
 
         public bool IsActive { get; set; }
 
-        public virtual List<Training> Trainings { get; set; } = new();
+        public virtual List<TrainingDto> Trainings { get; set; } = new();
+        public Guid UserId { get; set; }
+        public User User { get; set; } = null!;
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace BackendApi.Domain.Models
+﻿using BackendApi.Infrastructure.DTO;
+
+namespace BackendApi.Domain.Models
 {
     public class Training
     {
@@ -9,5 +11,6 @@
         public string TrainerName { get; set; } = "";
         public string? SpecialNotes { get; set; }
         public Trainer? Trainer { get; set; }
+        public List<Client>? Clients { get; set; }
     }
 }

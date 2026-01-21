@@ -1,11 +1,14 @@
 ﻿using BackendApi.Domain.Interfaces.Repositories;
 using BackendApi.Domain.Interfaces.Services;
+using BackendApi.Domain.Models;
 using BackendApi.Infrastructure.DTO;
 using BackendApi.Infrastructure.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BackendApi.Presentation.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class ClientController : Controller
@@ -32,11 +35,19 @@ namespace BackendApi.Presentation.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateClient([FromBody] Client client)
+        public async Task<IActionResult> CreateClient([FromBody] ClientDto client)
         {
             if (client == null)
                 return BadRequest("Client cannot be null.");
-            await clientRepository.AddClientAsync(client);
+            var entity = new Client
+            {
+                Name = client.Name,
+                AbonementExpireDate = client.AbonementExpireDate,
+                CardNumber = client.CardNumber,
+                SessionsLeft = client.SessionsLeft,
+                
+            };
+            await clientRepository.AddClientAsync(entity);
             return Ok(client);
         }
         [HttpPost("use-session/{cardNumber}")]

@@ -10,13 +10,13 @@ namespace BackendApi.Infrastructure.DTO
         {
             this.configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
         }
-        public virtual DbSet<Trainer> Trainers { get; set; } = null!;
-        public virtual DbSet<Training> Trainings { get; set; } = null!;
+        public virtual DbSet<TrainerDto> Trainers { get; set; } = null!;
+        public virtual DbSet<TrainingDto> Trainings { get; set; } = null!;
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseNpgsql(this.configuration.GetConnectionString("Toropov"));
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Trainer>(entity =>
+            modelBuilder.Entity<TrainerDto>(entity =>
             {
                 entity.ToTable("Trainer");
                 entity.Property(e => e.Id).HasColumnName("Id");
@@ -35,7 +35,7 @@ namespace BackendApi.Infrastructure.DTO
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("Training_Trainer");
             });
-            modelBuilder.Entity<Training>(entity =>
+            modelBuilder.Entity<TrainingDto>(entity =>
             {
                 entity.ToTable("Training");
 

@@ -1,4 +1,4 @@
-﻿using BackendApi.Infrastructure.DTO;
+﻿using BackendApi.Domain.Models;
 namespace BackendApi.Domain.Interfaces.Repositories
 {
     public interface ISessionStatisticsRepository

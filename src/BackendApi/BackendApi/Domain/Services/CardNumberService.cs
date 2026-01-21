@@ -9,10 +9,10 @@ namespace BackendApi.Domain.Services
 {
     public class CardNumberService : ICardNumberService
     {
-        private readonly ClientContext _context;
+        private readonly AppDbContext _context;
         private readonly ICardNumberGenerator _cardNumberGenerator;
 
-        public CardNumberService(ClientContext context, ICardNumberGenerator cardNumberGenerator)
+        public CardNumberService(AppDbContext context, ICardNumberGenerator cardNumberGenerator)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
             _cardNumberGenerator = cardNumberGenerator ?? throw new ArgumentNullException(nameof(cardNumberGenerator));

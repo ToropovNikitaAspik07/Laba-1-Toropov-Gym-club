@@ -1,12 +1,14 @@
 ﻿using BackendApi.Domain.Interfaces.Repositories;
+using BackendApi.Domain.Models;
+using BackendApi.Domain.Models.Auth;
 using BackendApi.Infrastructure.DTO;
 using Microsoft.EntityFrameworkCore;
 namespace BackendApi.Infrastructure.Repositories
 {
     public class TrainerRepository : ITrainerRepository
     {
-        private readonly TrainerContext _context;
-        public TrainerRepository(TrainerContext context)
+        private readonly AppDbContext _context;
+        public TrainerRepository(AppDbContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
@@ -25,6 +27,13 @@ namespace BackendApi.Infrastructure.Repositories
                 .AsNoTracking()
                 .ToListAsync();
            
+        }
+        public async Task AddTrainingWithClientsAsync(Training training) 
+        {
+            if (training == null)
+                throw new ArgumentNullException(nameof(training));
+            _context.Trainings.Add(training);
+            await _context.SaveChangesAsync();
         }
 
         //Просмотр тренировки с клиентами
@@ -45,7 +54,7 @@ namespace BackendApi.Infrastructure.Repositories
             if (string.IsNullOrWhiteSpace(notes))
                 throw new ArgumentException("Special notes cannot be empty");
 
-            var training = await _context.Set<Training>()
+            var training = await _context.Set<TrainingDto>()
                 .FirstOrDefaultAsync(t => t.Id == trainingId);
 
             if (training == null)

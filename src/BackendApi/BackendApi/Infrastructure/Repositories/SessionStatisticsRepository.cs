@@ -1,24 +1,23 @@
 ﻿using BackendApi.Domain.Interfaces.Repositories;
 using BackendApi.Infrastructure.DTO;
+using BackendApi.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Npgsql;
-using System;
 
 namespace BackendApi.Infrastructure.Repositories
 {
     public class SessionStatisticsRepository : ISessionStatisticsRepository
     {
-        private readonly SessionStatisticsContext _context;
+        private readonly AppDbContext _context;
         private readonly string? _connectionString;
         private readonly IConfiguration _configuration;
        
 
-        public SessionStatisticsRepository(SessionStatisticsContext context, IConfiguration configuration)
+        public SessionStatisticsRepository(AppDbContext context, IConfiguration configuration)
         {
-            this._context = context ?? throw new ArgumentNullException(nameof(context));
+            _context = context ?? throw new ArgumentNullException(nameof(context));
             _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
-            this._connectionString = configuration.GetConnectionString("Toropov") ?? throw new ArgumentNullException("Connection string 'Toropov' not found.");
+            _connectionString = configuration.GetConnectionString("Toropov") ?? throw new ArgumentNullException("Connection string 'Toropov' not found.");
             
         }
 

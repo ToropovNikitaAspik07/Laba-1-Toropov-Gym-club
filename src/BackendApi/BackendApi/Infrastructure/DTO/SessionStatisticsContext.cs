@@ -11,12 +11,12 @@ namespace BackendApi.Infrastructure.DTO
         {
             this.configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
         }
-        public virtual DbSet<SessionStatistics> SessionStatistics { get; set; } = null!;
+        public virtual DbSet<SessionStatisticsDto> SessionStatistics { get; set; } = null!;
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseNpgsql(this.configuration.GetConnectionString("Toropov"));
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<SessionStatistics>(entity =>
+            modelBuilder.Entity<SessionStatisticsDto>(entity =>
             {
                 entity.ToTable("SessionStatistics");
                 entity.Property(e => e.StatisticsDay).HasColumnName("StatisticsDay");
