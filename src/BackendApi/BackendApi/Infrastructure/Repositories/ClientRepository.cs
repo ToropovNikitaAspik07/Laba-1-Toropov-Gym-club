@@ -1,0 +1,128 @@
+﻿using BackendApi.Domain.Interfaces.Repositories;
+using BackendApi.Domain.Interfaces.Services;
+using BackendApi.Domain.Models;
+using BackendApi.Infrastructure.DTO;
+using Microsoft.EntityFrameworkCore;
+using Npgsql;
+
+
+namespace BackendApi.Infrastructure.Repositories
+{
+    public class ClientRepository : IClientRepository
+    {
+        private readonly AppDbContext _context;
+        private readonly ISessionStatisticsRepository _sessionStatisticsRepository;
+        private readonly ITrainerRepository _trainerRepository;
+        private readonly ICardNumberService _cardNumberService;
+
+
+
+        public ClientRepository(AppDbContext context,IConfiguration configuration, ISessionStatisticsRepository sessionStatisticsRepository, ITrainerRepository trainerRepository, ICardNumberService cardNumberService)
+        {
+            if (configuration == null)
+            {
+                throw new ArgumentNullException(nameof(configuration));
+            }
+            this._sessionStatisticsRepository = sessionStatisticsRepository ?? throw new ArgumentNullException(nameof(sessionStatisticsRepository));
+            this._context = context ?? throw new ArgumentNullException(nameof(context));
+            _trainerRepository = trainerRepository ?? throw new ArgumentNullException(nameof(trainerRepository));
+            _cardNumberService = cardNumberService
+        ?? throw new ArgumentNullException(nameof(cardNumberService));
+        }
+        
+        
+        public async Task<int> UseSessionAsync(string cardNumber) {
+                if (string.IsNullOrEmpty(cardNumber))
+                {
+                    throw new ArgumentNullException(nameof(cardNumber));
+                }
+                
+                await _sessionStatisticsRepository
+                    .IncrementSessionsUsedAsync(DateTime.UtcNow);
+                return await _context.Clients
+                        .Where(c => c.CardNumber == cardNumber && c.SessionsLeft > 0)
+                        .ExecuteUpdateAsync(c => c
+                            .SetProperty(
+                                client => client.SessionsLeft,
+                                client => client.SessionsLeft - 1)
+                        );
+                    
+                
+        }
+        public async Task<Client?> GetClientByCardNumberAsync(string cardNumber)
+        {
+            return await _context.Clients
+                .FirstOrDefaultAsync(c => c.CardNumber == cardNumber);
+        }
+        
+        public async Task<int> UpdateSessionNumber(string cardNumber, int sessionsToAdd)
+        {
+            if(string.IsNullOrEmpty(cardNumber))
+            {
+                throw new ArgumentNullException(nameof(cardNumber));
+            }
+            
+                return await _context.Clients
+                    .Where(c => c.CardNumber == cardNumber)
+                    .ExecuteUpdateAsync(c => c
+                        .SetProperty(
+                            client => client.SessionsLeft,
+                            client => client.SessionsLeft + sessionsToAdd)
+                    );
+           
+        }
+        public async Task AddClientAsync(Client client)
+        {
+            if( client == null)
+            {
+                throw new ArgumentNullException(nameof(client));
+            }
+            client.CardNumber = await _cardNumberService.GenerateUniqueCardNumberAsync();
+            client.AbonementExpireDate = DateTime.SpecifyKind((DateTime)client.AbonementExpireDate, DateTimeKind.Utc);
+            _context.Clients.Add(client);
+            await _sessionStatisticsRepository
+                .IncrementClientsRegisteredAsync(DateTime.UtcNow);
+            await _context.SaveChangesAsync();
+        }
+        public async Task RegisterClientToTrainingAsync(string cardNumber, int trainingId)
+        {
+            if (string.IsNullOrWhiteSpace(cardNumber))
+                throw new ArgumentNullException(nameof(cardNumber));
+
+            await using var transaction = await _context.Database.BeginTransactionAsync();
+
+            var client = await _context.Clients
+                .FirstOrDefaultAsync(c => c.CardNumber == cardNumber);
+
+            if (client == null)
+                throw new InvalidOperationException("Client not found");
+
+            if (client.SessionsLeft <= 0)
+                throw new InvalidOperationException("No sessions left");
+
+            var training = await _context.Trainings
+                .Include(t => t.Clients)
+                .FirstOrDefaultAsync(t => t.Id == trainingId);
+
+            if (training == null)
+                throw new InvalidOperationException("Training not found");
+
+            if (training.Clients.Any(c => c.Id == client.Id))
+                throw new InvalidOperationException("Client already registered for this training");
+
+            // добавляем клиента в тренировку
+            training.Clients.Add(client);
+
+            await _context.SaveChangesAsync();
+            await transaction.CommitAsync();
+        }
+        public async Task<List<Client>> GetByIdsAsync(List<Guid> ids)
+        {
+            return await _context.Clients
+                .Where(c => ids.Contains(c.Id))
+                .ToListAsync();
+        }
+
+
+    }
+}
